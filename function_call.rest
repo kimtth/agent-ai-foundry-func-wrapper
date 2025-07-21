@@ -1,0 +1,33 @@
+# Run your function locally with `func start host`
+@baseUrl = http://localhost:7071/api
+@threadId = <your-thread-id-without-double-quotes-or-single-quotes>
+
+### 1) Start a new chat thread
+POST {{baseUrl}}/chat/newchat
+Content-Type: application/json
+
+{}
+
+### 2) Missing parameters for conversation (should return 400)
+POST {{baseUrl}}/chat/conversation
+Content-Type: application/json
+
+{}
+
+### 3) Valid conversation turn via POST
+POST {{baseUrl}}/chat/conversation HTTP/1.1
+Content-Type: application/json
+
+{
+    "thread_id": "{{threadId}}",
+    "question": "How are you doing today?"
+}
+
+### 4) Another conversation turn via POST
+POST {{baseUrl}}/chat/conversation HTTP/1.1
+Content-Type: application/json
+
+{
+    "thread_id": "{{threadId}}",
+    "question": "Adding new conversation history to Azure Cosmos DB."
+}

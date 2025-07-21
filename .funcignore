@@ -1,0 +1,15 @@
+.git*
+.vscode
+__azurite_db*__.json
+__blobstorage__
+__queuestorage__
+local.settings.json
+test
+.venv
+.python_packages
+.env
+local.settings.sample.json
+poetry.lock
+pyproject.toml
+*.md
+showcase/

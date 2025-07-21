@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "PROJECT_ENDPOINT": "your_project_endpoint",
+    "AGENT_ID": "your_agent_id",
+    "MODEL_DEPLOYMENT_NAME": "your_model_deployment_name",
+    "COSMOS_ENDPOINT": "your_cosmos_endpoint",
+    "COSMOS_DATABASE_NAME": "your_cosmos_database_name",
+    "COSMOS_CONTAINER_NAME": "your_cosmos_container_name"
+  },
+    "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}
